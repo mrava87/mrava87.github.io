@@ -78,7 +78,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #bd5d38;
+  background-color: #767ab8fb;
 }
 
 .social-small-icons a {
@@ -227,4 +227,8 @@ img.img-research {
 
 img.img-logos {
   max-width: 12rem;
+}
+
+.resume-item a:hover {
+  background-color: #767ab8fb;
 }
