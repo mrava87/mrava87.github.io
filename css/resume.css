@@ -94,6 +94,10 @@ p.lead {
   margin-right: 1rem;
 }
 
+.social-small-icons a:hover {
+  background-color: #767ab8fb;
+}
+
 .dev-icons {
   font-size: 3rem;
 }
@@ -205,10 +209,14 @@ a {
   color: #3d80d6fb;
 }
 
-a:hover,
 a:focus,
 a:active {
   color: #3d80d6fb;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #767ab8fb;
   text-decoration: none;
 }
 
@@ -227,8 +235,4 @@ img.img-research {
 
 img.img-logos {
   max-width: 12rem;
-}
-
-.resume-item a:hover {
-  background-color: #767ab8fb;
 }
