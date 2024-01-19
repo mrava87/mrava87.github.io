@@ -63,7 +63,7 @@
 										
 										<p>Geophysical methods such as reflection seismology have played a key role in the discovery 
 										of hydrocarbons and other underground natural resources over the last few decades. As the world moves away 
-										from fossil fuels and progresses into new energy solutions, geophysics is likely to remain a key factor in the success of such an endavour. 
+										from fossil fuels and progresses into new energy solutions, geophysics is likely to remain a key factor in the success of such an endeavour. 
 										However, as these new low-carbon projects generate limited revenues compared to their fossil fuel counterparts, financial constraints will be put on the choice
 										of geophysical methods available for characterisation and monitoring of the subsurface. To tackle such a challenge, we must be creative and 
 										develop new acquisition, processing, imaging, and inversion technologies that can provide more with less.
@@ -96,15 +96,15 @@
 										of this problem, namely the fact that the underlying objective function can be written as a finite-sum functional, to solve MDD by means of stochastic gradient-based
 										optimizers. Whilst we initially explored this avenue to reduce the computational cost of solving MDD by leveraging the possible redundancy present it its gradients, our
 										results show that using partial gradients can also act as a natural and cheap regularizer to the problem that is on-par with some of the physics-based regularizers proposed
-										in our previous work. Finally, our recent endavours have focused on parametrizing the solution of MDD as a rank-deficient matrix in the frequency-domain. Whilst using low-rank
+										in our previous work. Finally, our recent endeavours have focused on parametrizing the solution of MDD as a rank-deficient matrix in the frequency-domain. Whilst using low-rank
 										regularization techniques is a well-established practice in geophysics, in <a href="https://arxiv.org/abs/2312.11004" style="color: #1a35bc">Chen et al. [2023]</a> we have presented
 										a novel low-rank parametrization that leverages the fact that the sought after wavefield in the MDD problem must be symmetric. This novel parametrization not only showed to be very 
 										beneficial to regularize the underlying inverse problem, but also allows storing the solution into a very compact form (a single tall matrix instead of two, as required by standard 
-										factorization-based low-rank parametrizations).
+										factorization-based low-rank parameterizations).
 										</p> 
 										
 										<p>Whilst MDD is slowly becoming mainstream in the seismic industry, Marchenko-based processing and imaging algorithms are still mostly in the realm of academia. 
-										Alongside sharing similar computational challanges with MDD and other multi-dimensional seismic processing algorithms, one of the key challenges of currently available
+										Alongside sharing similar computational challenges with MDD and other multi-dimensional seismic processing algorithms, one of the key challenges of currently available
 										Marchenko methods lies in their strict data requirements; in other words, either specialized acquisition systems or ad-hoc pre-processing sequences are 
 										required for such methods to work. In <a href="https://arxiv.org/abs/2312.11004" style="color: #1a35bc">Wang and Ravasi [2024]</a> we have developed the very first 
 										Marchenko method for seabed seismic systems that requires basic data pre-processing and can handle sparse geometry acquisitions as commonly adopted in industry to reduce
@@ -132,7 +132,7 @@
 										to drive the inversion towards a set of pre-defined geological units and counteract the limitations of band-limited and noisy seismic data. 
 										To the best of our knowledge, we have also been the first group to show that the Chambolle-Pock Primal-Dual solver provides results of superior quality and 
 										faster convergence compared to other, more widely used solvers in our community (e.g., ADMM). With this publication, we have also started our
-										journey in the fascinating world of proximal operators (and solvers), which has led us to a number of interesting discoveries as detailed throughtout this page.
+										journey in the fascinating world of proximal operators (and solvers), which has led us to a number of interesting discoveries as detailed throughout this page.
 										In <a href="https://library.seg.org/doi/full/10.1190/tle42070457.1" style="color: #1a35bc">Romero et al. [2023]</a>,
 										we have further adapted the concept of segmentation priors to time-lapse seismic inversion, producing astonishing results on the open Sleipner dataset where the CO2 plume is
 										defined a resolution higher than any previous state-of-the-art method could achieve, and its extracted volume quantitatively agrees with the 
@@ -146,7 +146,7 @@
 										powerful already in 2013, it was only recently with the explosion of deep learning based denoisers (we will talk more about this in the ML in 
 										geoscience section) that PnP priors have led to impressive results in a variety of imaging problems. In our specific case, we have shown that coupling
 										the Chambolle-Pock Primal-Dual solver with a pre-trained DRUNet network represents the magic sauce for achieving state-of-the-art inversion 
-										results on both synthetic and field data. Finally, whilst extending PnP to 3D comes with challanges, in <a href="https://arxiv.org/abs/2401.00753" style="color: #1a35bc">Luiken et al. [2024]</a>
+										results on both synthetic and field data. Finally, whilst extending PnP to 3D comes with challenges, in <a href="https://arxiv.org/abs/2401.00753" style="color: #1a35bc">Luiken et al. [2024]</a>
 										we have shown how the related concept of Multi Agent Consensus Equilibrium (MACE) can be used in combination with multiple denoisers (applied over different
 										directions) to retain the impressive capabilities of the PnP method when inverting 3D datasets. Whilst most of our examples have considered the problem of post-stack seismic inversion, 
 										any of the above developments can be easily applied to other seismic inversion scenarios. For example, in <a href="https://www.sciencedirect.com/science/article/pii/B9780323995931000082" style="color: #1a35bc">Ravasi et al. [2023]</a>
@@ -213,7 +213,7 @@
 										showed that our implementation of TLR matrix-vector multiplication can be easily adapted to "standard" accellerators (e.g., GPUs), as well
 										as more exotic ones, such as Graphcore IPUs (<a href="https://link.springer.com/chapter/10.1007/978-3-031-32041-5_7" style="color: #1a35bc">Ltaief et al. [2023a]</a>)
 										or Cerebras CS-2 systems (<a href="https://dl.acm.org/doi/abs/10.1145/3581784.3627042" style="color: #1a35bc">Ltaief et al. [2023b]</a> - this is our finalist
-										submission to the prestigeous <a href="https://sc23.supercomputing.org/2023/08/a-look-at-the-2023-gordon-bell-prize-finalists/">2023 Gordon Bell Prize!</a>).
+										submission to the prestigious <a href="https://sc23.supercomputing.org/2023/08/a-look-at-the-2023-gordon-bell-prize-finalists/">2023 Gordon Bell Prize!</a>).
 										</p>
 											
 									</section>
@@ -271,14 +271,14 @@
 										captured by a properly crafted training data, we show that this approach is superior to various state-of-the-art sparsity based inversion algorithms routinely used for a variety of processing tasks in geophysics. Whilst using
 										a nonlinear dimensionality reduction technique such as an AE network, or more recently developed generative networks (see below in the UQ section for more details), is appealing to regularize the solution of ill-posed inverse problems, 
 										it does however still require availability of some sort of training data. On the other hand, the recently established coordinate-based learning paradigm (also called Implicit Neural Representation - INR) puts forward the idea that simple MLP networks
-										could be used to robustly represent any continous function by taking its spatial coordinates as input. In the original formulation, the network's parameters are directly learned from a set of discrete training points of the object that we want the network to store;
+										could be used to robustly represent any continuous function by taking its spatial coordinates as input. In the original formulation, the network's parameters are directly learned from a set of discrete training points of the object that we want the network to store;
 										more recently, some of our KAUST colleagues have shown that one can uplift this paradigm to the solution of inverse problems and learn the parameters in a fully unsupervised manner by simply using a data misfit loss plus any regularizer of choice, as commonly done
 										when solving an inverse problem. In <a href="https://arxiv.org/abs/2312.10568" style="color: #1a35bc">Romero et al. [2023]</a> we had a great deal of success in adopting this concept to seismic inverse problems, obtaining results that 
 										are on-par (or sometimes even better) with those of some of our state-of-the-art algorithms discussed in the High-resolution reservoir characterization section. 
 										</p>
 
 										<p>Physics Informed Neural Networks (PINNs) can be seen as a specialized version of INRs. They are specifically used to solve direct or inverse ODE- or PDE-based problems. Key to PINNs is the loss function,
-										which encapsulates our knowledge of the physical system that we want to model (i.e., an ODE or PDE), and the mechanism used to obtain derivaties of the state variable with respect to the indipendent variables of the
+										which encapsulates our knowledge of the physical system that we want to model (i.e., an ODE or PDE), and the mechanism used to obtain derivatives of the state variable with respect to the independent variables of the
 										differential equation (i.e., Automatic Differentiation). In <a href="https://arxiv.org/abs/2305.15990" style="color: #1a35bc">Brandolin et al. [2023]</a> we have recently re-purposed Fomel's idea of processing seismic
 										data with slopes by recasting the slope estimation and seismic interpolation problems within the PINN framework. Going forward we aim to further exploit the intrinsic benefits of neural networks and more in general of nonlinear, 
 										differentiable optimization to separate seismic data in multiple components based on their slope, a process that could facilitate the solution of many longstanding seismic processing tasks. 
@@ -290,17 +290,17 @@
 										As inherent in human nature, we tend to instinctively pursue the optimal solution to a problem and prioritize it above all else.
 										However, as we live in an uncertain world, we must learn how to cope with uncertainties. This simple life principle applies also to any scientific decision that we make, and 
 										motivates the quest for methods that can quantify and propagate uncertainties in any decision making process. For many years, geophysicists have strived to develop efficient algorithms
-										to solve inverse problems with a probalistic mindset (i.e., providing not only the best solution but also the associated uncertainties); however, in my personal opinion, most of the solutions available out there
+										to solve inverse problems with a probabilistic mindset (i.e., providing not only the best solution but also the associated uncertainties); however, in my personal opinion, most of the solutions available out there
 										cannot properly capture the complexity of our prior and noise models due to algorithmic limitations, which leads to solutions that are at best unrealistic (despite perhaps being statistically valid).
 										The tremendous growth of generative modelling in the DL community has however recently opened some very promising avenues, which we have started to explore with great success. In 
 										<a href="https://library.seg.org/doi/abs/10.1190/geo2023-0035.1" style="color: #1a35bc">Izzatullat et al. [2023]</a> we have applied the Stein Variational Gradient Descent (SVGD) algorithm to the 
 										post-stack seismic inverse problem. SVGD, a method that belongs to the family of Variational Inference (VI) methods, allows one to sample a number of initial particles and solve a Bayesian inference problem
 										using classical gradient-based optimization algorithms over those particles in a coupled manner; as most Bayesian approaches, SVGD does not naturally lend to the inclusion of prior knowledge that cannot be easily
-										embedded into a probability density function: to circument this, we propose PnP-SVGD, a regularized variation of the SVGD algorithm that introduces the PnP concept to probabilistic inversion with the aim of producing
-										more realistic and reliable samples of the posterior distribution of interest. Once again, denoising neural networks are shown to outreach their original goal of removing noise from a given observed natual signal.
+										embedded into a probability density function: to circumvent this, we propose <b>PnP-SVGD, a regularized variation of the SVGD algorithm</b> that introduces the PnP concept to probabilistic inversion with the aim of producing
+										more realistic and reliable samples of the posterior distribution of interest. Once again, denoising neural networks are shown to outreach their original goal of removing noise from a given observed natural signal.
 										</p>
 
-										<p>Whilst SVGD is an unparametric VI methods, VI can also be casted in a parametric form where the parameters of a so-called proposal distribution are
+										<p>Whilst SVGD is an non-parametric VI methods, VI can also be casted in a parametric form where the parameters of a so-called proposal distribution are
 										iteratively updated to match the posterior distribution of interest. The choice of such a parametrization is fundamental to the success of VI, and must strike a balance between expressivity 
 										(i.e., the chosen probabilistic model can be used to represent the underlying distribution) and tractability (i.e., the chosen probabilistic model must be easily to evaluate and sample for).
 										In <a href="https://library.seg.org/doi/10.1190/image2023-3904212.1" style="color: #1a35bc">Ravasi [2023a]</a> we extend the idea of using the latent space of a AE
@@ -323,7 +323,7 @@
 											<li>MDD redatuming for Seismic-While-Drilling.</li>
 										</ul>
 										</blockquote>
-										<p>Those who are familar with my research know that I have always been passionate about developing new theoretical concepts and translating them into efficient algorithms.
+										<p>Those who are familiar with my research know that I have always been passionate about developing new theoretical concepts and translating them into efficient algorithms.
 										With time, I have however realized that there is one thing about being able to acquire data in the field: apart from making someone a more rounded geophysicist, it allows developing new ideas from the ground up combining
 										ideal acquisition setups with ad-hoc processing techniques. Whilst in the past the entry level for purchasing sophisticated acquisition systems was very high and not really affordable for academia,
 										things have changed a lot in the last decade: nowadays, everyone can buy a land acquisition system with portable nodes or rent an interrogator to acquire Distributed Acoustic Sensing (DAS) data, 
@@ -341,7 +341,7 @@
 										<p><span class="image right"><img src="images/das.png" alt=""/></span>
 										Another cool project that I have just started and will keep our group busy for the years to come is a DAS acquisition campaign at the KAUST pilot geothermal site. We have currently acquired a baseline dataset with our Stryde system to 
 										obtain a first, preliminary understanding of the subsurface. This will be soon followed by a first-of-a-kind acquisition of a Seismic-While-Drilling (SWD) data using a joint DAS and node system. The same system will also acquire seismic passive data for a 
-										number of days after the drilling is completed. We are excited to take on the challange to provide new insights into the subsurface structures that lie just beneath our feet in the KAUST campus as well as to use these unique datasets to stress test some of
+										number of days after the drilling is completed. We are excited to take on the challenge to provide new insights into the subsurface structures that lie just beneath our feet in the KAUST campus as well as to use these unique datasets to stress test some of
 										cutting-edge processing and imaging technologies, and example of which being our novel time-domain MDD algorithms.
 										</p>
 									</section>
