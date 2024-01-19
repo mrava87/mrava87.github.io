@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MR87 - Software</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="index.html"></a></h1>
+					<nav>
+						<a href="#menu">Menu</a>
+					</nav>
+				</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="research.html">Research</a></li>
+								<li><a href="software.html">Software</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Our Software</h2>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									
+									<section>
+										<h2>Why bother?</h2>
+										<p>
+										A handful of research groups around the world care about scientific software development as much as we do. The trigger of such an interest 
+										can be traced back to my previous job (working as a researcher in industry): I noticed that a lot of code was written over and over again to 
+										fullfill short term research objectives, which always took precedence over long term goals. Having a solid, shared code basis can instead 
+										empower all the members of a team and allow them to focus on new, exciting research questions whilst also contributing to improve the 
+										quality and robustness of their shared underlying software.
+										</p>
+
+										<p>
+										PyLops, our flagship software package [<a href="https://www.sciencedirect.com/science/article/pii/S2352711019301086" style="color: #1a35bc">Ravasi and Vasconcelos [2020]</a>], 
+										is a Python based framework for large-scale, matrix-free inverse problems. Built in a 
+										modular fashion, it enables both beginners and advanced users to take advantage of its functionalities: the former can use it for educational 
+										purposes or to build research prototype codes, the latter can leverage its dual cpu/gpu backend to develop high-performance technologies 
+										such as the one that powers the software user for our Gordon Bell Prize 2023 contribution that was shortlisted as one of the 6 finalists.
+										The history of PyLops provides a clear example of what a general-purpose, flexible, and scalable software package can provide in the long 
+										run to both its development team and the scientific community at large. Currently, more than 80 research papers have acknowledged the use of 
+										PyLops. Apart from those associated with one or more of our core developers (roughly 40%), notable examples can be found in 
+										<a href="https://www.sciencedirect.com/science/article/pii/S2352711019301086" style="color: #1a35bc">Nightingale et al. [2021]</a>
+										that exploited PyLops’ scalability to invert large astronomical datasets, 
+										<a href="https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.20.064014" style="color: #1a35bc">Muller et al. [2023]</a> that 
+										leveraged PyLops in their implementation of acoustic cloning, and <a href="https://www.sciencedirect.com/science/article/pii/S2352711023002200" style="color: #1a35bc">Renders et al. [2023]</a>
+										 that developed an image warping toolbox on top of PyLops. 
+										We believe this to represent just a small fraction of the number of world-wide users of PyLops, and we are aware of the fact that our users are both in academia and industry.
+										</p>
+										
+										<p>
+										Over the year, additional auxiliary software packages have been built around PyLops, creating what we call nowadays the PyLops ecosystem. A notable example of this is PyProximal
+										[<a href="https://github.com/openjournals/joss-papers/blob/joss.06185/joss.06185/10.21105.joss.06185.pdf" style="color: #1a35bc">Ravasi et al. [2024]</a>],
+										a Python library for convex optimization. Created originally upon suggestion of one of PyLops' users, PyProximal has grown exponentially in the last few years with contributors
+										coming from all over the world with different scientific background and expertise. Another recent development, which started as part of the 2023 Google Summer of Code, is
+										<a href="https://gist.github.com/rohanbabbar04/8d3b957fd359c4c14d1d3882b38967f9" style="color: #1a35bc">PyLops-MPI</a>: this software package aims to extend the capabilities some of PyLops' main operators towards distribute computing via MPI (using the MPI4py library), enabling users to
+										scale their PyLops codes beyond a standard single node configuration.  
+										</p>
+									</section>
+									
+									<section>
+										<h3 class="major"></h3>
+										<br></br>
+									</section>
+
+									<section>
+										<h3><span class="image leftsmall"><img src="images/pylops.png" alt=""/></span>
+											<i class="fab fa-python"></i>  - A Linear-Operator Library for Python
+										</h3>
+										<p>
+										A Python library aimed at solving large-scale inverse problems in an efficient manner, 
+										whilst writing computer code that resembles the underlying mathematica formuation
+										<strong><span style="color: #138759">|</span></strong>
+										<a href="https://github.com/PyLops/pylops"> <i class="fab fa-github" style="font-size: 1.em;"></i> </a>
+										<a href="https://pylops.readthedocs.io"> <i class="fas fa-book" style="font-size: 1.em;"></i> </a>
+										</p>
+									</section>
+									<br></br>
+
+									<section>
+										<h3><span class="image rightsmall"><img src="images/pyproximal.png" alt="" /></span>
+											<i class="fab fa-python"></i>  - Proximal Operators and Solvers in Python
+										</h3>
+										<p>
+										A Python library aimed at optimizing convex, non-smooth functionals by means of proximal operators and solvers
+										<strong><span style="color: #138759">|</span></strong>
+										<a href="https://github.com/PyLops/pyproximal"> <i class="fab fa-github" style="font-size: 1.em;"></i> </a>
+										<a href="https://pyproximal.readthedocs.io"> <i class="fas fa-book" style="font-size: 1.em;"></i> </a>
+										</p>
+									</section>
+									<br></br>
+
+									<section>
+										<h3><span class="image leftsmall"><img src="images/pylopsmpi.png" alt="" /></span>
+											<i class="fab fa-python"></i>  - Distributed Linear Operators in Python
+										</h3>
+										<p>
+										A lightweight extension of PyLops to distribute operators on HPC systems via MPI.
+										<strong><span style="color: #138759">|</span></strong>
+										<a href="https://github.com/PyLops/pylops-mpi"> <i class="fab fa-github" style="font-size: 1.em;"></i> </a>
+										<a href="https://github.com/PyLops/pylops-mpi"> <i class="fas fa-book" style="font-size: 1.em;"></i> </a>
+										</p>
+									</section>
+									<br></br>
+
+									<section>
+										<h3>PyMarchenko
+											<i class="fab fa-python"></i>  - A bag of Marchenko algorithms implemented on top of PyLops
+										</h3>
+										<p>
+										A Python library collecting most of the Marchenko algorithms available in the literature, 
+										all implemented using the same framework and accessible in the same way.
+										<strong><span style="color: #138759">|</span></strong>
+										<a href="https://github.com/DIG-Kaust/pymarchenko"> <i class="fab fa-github" style="font-size: 1.em;"></i> </a>
+										<a href="https://dig-kaust.github.io/pymarchenko/"> <i class="fas fa-book" style="font-size: 1.em;"></i> </a>
+										</p>
+									</section>
+									
+									<section>
+										<h3>SPGL1
+											<i class="fab fa-python"></i>  - Spectral Projected Gradient for L1 minimization
+										</h3>
+										<p>
+											A Python solver for L1 regularized problems. Finds applications in data denoising,
+											compressive sensing, and sparsity promoting inversion in general.
+										<strong><span style="color: #138759">|</span></strong>
+										<a href="https://github.com/drrelyea/spgl1"> <i class="fab fa-github" style="font-size: 1.em;"></i> </a>
+										<a href="https://spgl1.readthedocs.io/en/latest/"> <i class="fas fa-book" style="font-size: 1.em;"></i> </a>
+										</p>
+									</section>
+									
+
+
+								</div>
+							</div>
+
+					</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
